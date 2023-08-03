@@ -1,7 +1,5 @@
-
-
-
-
+#!/usr/bin/python3
+"""Determines if all the boxes in a list can be unlocked."""
 
 def canUnlockAll(boxes):
     """Determines if all the boxes in a list can be unlocked.
