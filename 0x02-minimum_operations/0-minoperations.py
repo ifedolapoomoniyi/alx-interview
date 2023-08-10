@@ -1,4 +1,4 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 
 """
     This method returns the min number of operations 
