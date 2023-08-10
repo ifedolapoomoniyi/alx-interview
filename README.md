@@ -1,1 +1,3 @@
-This repository contains real life interview code and questions posed by alx software engineering program.
+# Alx Interview
+
+This repository contains real life interview answers to questions posed by alx software engineering program.
