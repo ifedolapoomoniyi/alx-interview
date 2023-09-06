@@ -14,20 +14,17 @@ async function getCharacters() {
 		"https://swapi-api.alx-tools.com/api/films/" + movieId
 	);
 	if (!url.ok) {
-		console.error("Failed to fetch film data for given Id")
-		return
+		console.error("Failed to fetch film data for given Id");
+		return;
 	}
 	const movie = await url.json();
 	let characters = movie.characters;
 
-    //characters returns links to each character
+	//characters returns links to each character which is then mapped over
 
-	characters.forEach((element) => {
-		async function printCharacters() {
-			const url = await fetch(element);
-			const character = await url.json();
-			console.log(character.name);
-		}
-		printCharacters();
-	});
+	for (const char of characters) {
+		const url = await fetch(char);
+		const character = await url.json();
+		console.log(character.name);
+	}
 }
